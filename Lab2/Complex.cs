@@ -11,6 +11,15 @@ namespace Lab2
         private int real;
         private int img;
 
+        public Complex()
+        {
+            
+        }
+        public Complex(int _real, int _img)
+        {
+            real = _real;
+            img = _img;
+        }
         public void SetReal(int _real)
         {
             real = _real;

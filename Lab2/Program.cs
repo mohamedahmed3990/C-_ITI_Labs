@@ -65,6 +65,26 @@
             #endregion
 
 
+            #region Complex using constructor
+            //Console.Write("Enter real number1: ");
+            //int real1 = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter img number1: ");
+            //int img1 = int.Parse(Console.ReadLine());
+
+
+            //Console.Write("Enter real number2: ");
+            //int real2 = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter img number2: ");
+            //int img2 = int.Parse(Console.ReadLine());
+
+            //Complex complex1 = new Complex(real1, img1);
+            //Complex complex2 = new Complex(real2, img2);
+
+            //Console.WriteLine(complex1.Add(complex2).Print()); 
+            #endregion
+
 
 
 
