@@ -33,12 +33,10 @@ namespace Lab3
             #endregion
 
 
-
-
             #region Read from user aggregation/association
 
-            //Department department = new Department(1,"cs");
-            //HireDate date = new HireDate(1,1,2022);
+            //Department department = new Department(1, "cs");
+            //HireDate date = new HireDate(1, 1, 2022);
 
             //Console.WriteLine("please enter ssn");
             //int Essn = int.Parse(Console.ReadLine());
@@ -51,7 +49,10 @@ namespace Lab3
 
             //Employee employee1 = new Employee(Essn, Ename, Eage, department, date);
 
-            //Console.WriteLine(employee1.Print()); 
+            //employee1.SetDepartment(null);
+            //employee1.SetHireDate(null);
+
+            //Console.WriteLine(employee1.Print());
             #endregion
 
 
