@@ -6,13 +6,13 @@
         {
             #region Static binding
             //Parent parent = new Child();
-            //parent.Show();
+            //parent.Show1();
 
             //Parent parent2 = new SubChild();
-            //parent2.Show();
+            //parent2.Show1();
 
             //Child child = new SubChild();
-            //child.Show();
+            //child.Show1();
             #endregion
 
 
