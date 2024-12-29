@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    public struct Employee
+    public struct Employee : IComparable
     {
         int id;
         string name;
@@ -67,11 +67,12 @@ namespace Lab7
             return $"Id: {id}\nName: {name}\nSalary {salary:C}\nHireDate : {hireDate}\nSecurity Level: {securityLevel}\nGender: {gender}";
         }
 
+        public int CompareTo(object? obj)
+        {
+            Employee emp = (Employee) obj;
 
+            return this.hireDate.CompareTo(emp.hireDate);
 
-
-
-
-
+        }
     }
 }

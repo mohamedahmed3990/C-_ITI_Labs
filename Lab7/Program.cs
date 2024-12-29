@@ -170,6 +170,24 @@ namespace Lab7
             //Console.WriteLine(employee);
 
             #endregion
+
+            HireDate date1 = new HireDate(10, 2, 2000);
+            HireDate date2 = new HireDate(12, 3, 2024);
+            HireDate date3 = new HireDate(1, 1, 2012);
+
+            Employee[] employees = {
+                new Employee(1,"ali",2000,date1,Gender.Male, Securitylevel.secretary),
+                new Employee(2,"mohamed",3000,date2,Gender.Male, Securitylevel.DBA),
+                new Employee(3,"sara",4000,date3,Gender.Female, Securitylevel.guest)
+            };
+
+            Array.Sort(employees);
+
+            foreach (Employee employee in employees)
+            {
+                Console.WriteLine(employee);
+            }
         }
+            
     }
 }

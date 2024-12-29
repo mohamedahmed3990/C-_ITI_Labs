@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    public struct HireDate
+    public struct HireDate : IComparable
     {
         int day;
         int month;
@@ -41,9 +41,18 @@ namespace Lab7
             return $"{day} : {month} : {year}";
         }
 
-
-
-
-
+        public int CompareTo(object? obj)
+        {
+            HireDate hireDate = (HireDate)obj;
+            if(this.year == hireDate.year)
+            {
+                if(this.month == hireDate.month)
+                {
+                    return this.day.CompareTo(hireDate.day);
+                }
+                return this.month.CompareTo(hireDate.month);
+            }
+            return this.year.CompareTo(hireDate.year);
+        }
     }
 }
